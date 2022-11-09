@@ -14,5 +14,5 @@ driver.get('https://bra.ifsp.edu.br/servidores')
 lista  = driver.find_element(By.XPATH, '//*[@id="content-section"]/div/div[1]/ul')
 linhas  = lista.find_elements(By.TAG_NAME, "li")
 
-for l in linhas:
+for l in linhas: 
   print(l.text)
